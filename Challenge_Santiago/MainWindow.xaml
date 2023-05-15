@@ -1,0 +1,21 @@
+﻿<Window x:Class="Challenge_Santiago.MainWindow"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Challenge_Santiago"
+        mc:Ignorable="d"
+        Title="Routes" Height="650" Width="800" Loaded="Window_Loaded"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <DataGrid Name="dtGridView" ColumnWidth="*" IsReadOnly="True" MouseDoubleClick="MyDataGrid_MouseDoubleClick" HorizontalAlignment="Left" Height="207" Margin="264,112,0,0" VerticalAlignment="Top" Width="466"/>
+        <TextBox x:Name="searchAddressTxtBox" HorizontalAlignment="Left" Height="33" Margin="23,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" TextChanged="SearchAddressTxtBox_TextChanged" PreviewMouseLeftButtonUp="SearchAddressTxtBox_PreviewMouseLeftButtonUp" FontSize="14"/>
+        <Label Content="Address To Search By:" HorizontalAlignment="Left" Margin="40,106,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="dbAddressLabel" Content="Double Click An Address To Find the nearest 10 locations" HorizontalAlignment="Left" Margin="264,319,0,0" VerticalAlignment="Top" FontSize="18" Foreground="LightGray"/>
+        <DataGrid x:Name="dtGridView2"  ColumnWidth="*" HorizontalAlignment="center" Height="168" Margin="10,421,10,10" VerticalAlignment="Top" Width="667"/>
+        <Label Content="What Is Nearby?" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="36"/>
+        <Label x:Name="currentAddressLabel" Content="" HorizontalAlignment="Left" Margin="70,388,0,0" VerticalAlignment="Top" Height="28" Width="667" FontSize="14"/>
+    </Grid>
+</Window>
